@@ -1,6 +1,8 @@
 const { User, Thought } = require('../models');
 
 module.exports = {
+    // /api/users
+    
     // get all users
     async getUsers(req, res) {
         try {
@@ -68,4 +70,9 @@ module.exports = {
             res.status(500).json(err);
         }
     },
+    // /api/users/:userId/friends/:friendId
+
+    // post to add a new friend to a user's friend list
+
+    // delete to remove a friend from a user's friend list
 };
