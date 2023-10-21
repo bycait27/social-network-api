@@ -32,9 +32,6 @@ thoughtSchema
     .virtual('reactionCount')
     .get(function () {
         return this.reactions.length;
-    })
-    .get(function () {
-        return moment().format();
     });
 
     // initialize Thought model
