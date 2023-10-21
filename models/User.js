@@ -43,6 +43,7 @@ userSchema
         return this.friends.length;
     });
 
+// initialize User model
 const User = model('user', userSchema);
 
 module.exports = User;
