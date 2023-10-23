@@ -144,30 +144,30 @@ const reactions = [
     'You nailed it!'
 ];
 
-const users = [];
+// const users = [];
 
 // get a random item given an array
 const getRandomArrItem = (arr) => arr[Math.floor(Math.random() * arr.length)];
 
 // get random username 
-const getRandomUsername = () => `${getRandomArrItem(usernames)}`;
+const getRandomUsername = () => getRandomArrItem(usernames);
 
 // get random email 
-const getRandomEmail = () => `${getRandomArrItem(emails)}`;
+const getRandomEmail = () => getRandomArrItem(emails);
 
 // function to generate random thoughts that we can add to the database
 // includes reactions
 const createRandomThoughts = (int) => {
-    let results = [];
-    for (let i = 0; i < int; i++) {
-      results.push({
-        thoughtText: getRandomArrItem(thoughts),
-        username: getRandomUsername(),
-        reactions: [...createReactions(3)],
-      });
-    }
-    return results;
-  };
+  let results = [];
+  for (let i = 0; i < int; i++) {
+    results.push({
+      thoughtText: getRandomArrItem(thoughts),
+      username: getRandomUsername(),
+      reactions: [...createReactions(3)],
+    });
+  }
+  return results;
+};
 
 // create the reactions that will be added to each thought
 const createReactions = (int) => {

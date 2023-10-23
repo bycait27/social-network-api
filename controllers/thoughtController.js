@@ -119,7 +119,7 @@ module.exports = {
             );
 
             if (!thought) {
-                return res.status(404).json({ message: 'No thought with thT ID!' });
+                return res.status(404).json({ message: 'No thought with that Id!' });
             }
 
             res.json(thought);
