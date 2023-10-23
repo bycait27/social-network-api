@@ -23,7 +23,7 @@ This is a Social Network API that uses MongoDB for its speed with large amounts 
 
 Once the user has seeded the database and started the server, they can open Insomnia and test the routes. The user can test their GET routes for all users and thoughts, as well as single users and thoughts. Once this is fetched, the user should recieve the data for each route displayed in a formatted JSON. Additionally, the user can test their POST routes to create a new thought, reaction or add a friend. The PUT routes can be tested by updating a user, thought, or reaction. Finally, the DELETE routes can be tested with removing a user, thought, reaction, or friend.
 
-[Back-end Tutorial]([https://drive.google.com/file/d/1w--seJ5dBPWHFLHl6a-NAT_pghcS3tX5/view](https://watch.screencastify.com/v/gRvSuLP0sq9Kf3K9RyHn))
+[Back-end Tutorial]([https://drive.google.com/file/d/1w--seJ5dBPWHFLHl6a-NAT_pghcS3tX5/view](https://watch.screencastify.com/v/gRvSuLP0sq9Kf3K9RyHn)
 
 ## Credits
 
