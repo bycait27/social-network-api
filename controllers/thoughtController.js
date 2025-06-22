@@ -23,7 +23,7 @@ module.exports = {
 
       res.json(thought);
     } catch (err) {
-      req.status(500).json(err);
+      res.status(500).json(err);
     }
   },
   // post to create a new thought (also push the created thought's _id to the associated user's thoughts array field)
