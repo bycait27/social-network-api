@@ -42,7 +42,8 @@ module.exports = {
     try {
       const user = await User.findByIdAndUpdate(
         { _id: req.params.userId },
-        { new: true },
+        { $set: req.body },
+        { new: true, runValidators: true },
       );
 
       if (!user) {
